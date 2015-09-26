@@ -4,8 +4,7 @@ This project contains program source code that allows Chapel programs to run on 
 
 ## HOWTO make the Mesos Framework?
 
-If you plan to use this framework with Chapel programs that do not use Chapel's HDFS I/O support, compile the Chapel-Mesos-Framework
-by running `make` and `make install`.
+If you plan to use this framework with Chapel programs that do not use Chapel's HDFS I/O support, edit the `INSTALL_DIR` variable in `Makefile`, compile the Chapel-Mesos-Framework by running `make` and `make install`.
 
 For programs that require HDFS I/O support, check to see if the machine compiling the Chapel program has `libjvm.a` on the system
 (look in `/usr/lib`, `/usr/local/lib`, or where `$JAVA_HOME` points).
